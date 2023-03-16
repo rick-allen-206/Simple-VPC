@@ -1,0 +1,38 @@
+{
+  "default_azs": [
+    "us-west-2a",
+    "us-west-2b",
+    "us-west-2c"
+  ],
+  "tgw": {
+    "id": "tgw-123456789",
+    "prd_tgw_route_table_name": "default-rt",
+    "nonprd_tgw_route_table_name": "nonprd-rt"
+  },
+  "default_endpoints": {
+    "ssm": {
+      "service": "ssm",
+      "private_dns_enabled": true
+    },
+    "ssmmessages": {
+      "service": "ssmmessages",
+      "private_dns_enabled": true
+    },
+    "ec2": {
+      "service": "ec2",
+      "private_dns_enabled": true
+    },
+    "secretsmanager": {
+      "service": "secretsmanager",
+      "private_dns_enabled": true
+    },
+    "sts": {
+      "service": "sts",
+      "private_dns_enabled": true
+    },
+    "acm": {
+      "service": "acm-pca",
+      "private_dns_enabled": true
+    }
+  }
+}
